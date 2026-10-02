@@ -5,20 +5,20 @@ class Schemata < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/msbolton/Schemata/releases/download/v0.6.0/schemata-0.6.0-macos-arm64.tar.gz"
-      sha256 "e135d6a898e189c9f62118996402a8dd7c3dbab6a9a542a6f3c61eedb7eb17f2"
+      url "https://github.com/msbolton/Schemata/releases/download/v0.7.0/schemata-0.7.0-macos-arm64.tar.gz"
+      sha256 "468e6af4f5688a687ed61d95f0301d7082362b829d3edf72c0f4dc6941389044"
     end
     on_intel do
-      url "https://github.com/msbolton/Schemata/releases/download/v0.6.0/schemata-0.6.0-macos-x64.tar.gz"
-      sha256 "cf5e4f25721e840a1323879b7e7e35cc8dc9e5fcb95744b8bdcf5421e5954a34"
+      url "https://github.com/msbolton/Schemata/releases/download/v0.7.0/schemata-0.7.0-macos-x64.tar.gz"
+      sha256 "70757969c13deb3a8c4af018061267bd6da8b5068fbae84c414cdc08b18d11d0"
     end
   end
 
   on_linux do
     depends_on arch: :x86_64
     on_intel do
-      url "https://github.com/msbolton/Schemata/releases/download/v0.6.0/schemata-0.6.0-linux-x64.tar.gz"
-      sha256 "5bce179e15d90a9dc52699d64512e8a6766ebafb9aedcbac1cda9efcaaa83cb6"
+      url "https://github.com/msbolton/Schemata/releases/download/v0.7.0/schemata-0.7.0-linux-x64.tar.gz"
+      sha256 "55a4417072a1728780772b3b3203e76910d8b8b4174c326fd80daff2c36ae062"
     end
   end
 
