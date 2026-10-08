@@ -28,11 +28,11 @@ class Schemata < Formula
 
   test do
     (testpath/"t.schemata").write <<~EOS
-      namespace t
+      schema t
 
-      enum Kind { #1 personal, #2 work }
+      enum Kind { personal work }
 
-      record Contact { @sql(key) #1 id: int64  #2 kind: Kind = personal }
+      model Contact { id int64 { id }  kind Kind = personal }
     EOS
     assert_match "schemata #{version}", shell_output("#{bin}/schemata --version")
     # A default is lossy for Protobuf, so `check` reports warnings and exits 2.
